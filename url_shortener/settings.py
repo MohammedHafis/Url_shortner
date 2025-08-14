@@ -10,7 +10,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']  # Later you can replace * with your actual Render domain
 
 # Static files settings
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 INSTALLED_APPS = [
     "django.contrib.admin",
